@@ -483,7 +483,7 @@ footer{padding-bottom:70px}
     const now = new Date();
     const diff = deadline - now;
     if(diff <= 0){
-      ['td','th','tm','ts'].forEach(id => document.getElementById(id).textContent='00');
+      document.querySelector('.timer-wrap').innerHTML = '<p style="font-size:15px;font-weight:800;color:#fbbf24;letter-spacing:.5px">🔴 얼리버드 마감되었습니다</p>';
       return;
     }
     const d = Math.floor(diff/86400000);
