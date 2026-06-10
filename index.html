@@ -303,7 +303,7 @@ footer{padding-bottom:70px}
         <span class="eb-sub">선착순 마감 · 지금 바로 신청</span>
       </div>
       <div class="timer-wrap">
-        <p class="timer-label">⏰ 얼리버드 마감까지</p>
+        <p class="timer-label">⏰ 사전 등록 할인 마감까지</p>
         <div class="timer-boxes">
           <div class="tb"><div class="tb-num" id="td">00</div><div class="tb-lbl">일</div></div>
           <div class="timer-sep">:</div>
@@ -483,7 +483,7 @@ footer{padding-bottom:70px}
     const now = new Date();
     const diff = deadline - now;
     if(diff <= 0){
-      document.querySelector('.timer-wrap').innerHTML = '<p style="font-size:15px;font-weight:800;color:#fbbf24;letter-spacing:.5px">🔴 얼리버드 마감되었습니다</p>';
+      document.querySelector('.timer-wrap').innerHTML = '<p style="font-size:15px;font-weight:800;color:#fbbf24;letter-spacing:.5px">🔴 사전 등록 할인이 마감되었습니다</p>';
       return;
     }
     const d = Math.floor(diff/86400000);
